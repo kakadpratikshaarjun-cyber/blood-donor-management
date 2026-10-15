@@ -1,38 +1,35 @@
+## Flowchart: Stack and Queue Using Doubly Linked List
+
+```mermaid
 flowchart TD
-    A([Start]) --> B["Create Node Structure: Data, Prev, Next"]
-    B --> C["Initialize top = NULL, front = rear = NULL"]
-    C --> D["Display Main Menu"]
-    D --> E{"Select Operation"}
+    A([START]) --> B["Initialize top, front and rear to NULL"]
+    B --> C["Display Main Menu"]
+    C --> D{"Enter Choice"}
 
-    E -->|Stack| F{"Stack Operation"}
-    E -->|Queue| G{"Queue Operation"}
-    E -->|Exit| Z([Stop])
+    D -->|Stack| E{"Stack Operation"}
+    D -->|Queue| F{"Queue Operation"}
+    D -->|Exit| Z([STOP])
 
-    F -->|Push| H["Create New Node"]
-    H --> I["Insert Node at Top"]
-    I --> J["Update Top Pointer"]
-    J --> D
+    E -->|Push| G["Create Node and Insert at Top"]
+    E -->|Pop| H{"Stack Empty?"}
+    E -->|Display| I["Display Stack Elements"]
 
-    F -->|Pop| K{"Stack Empty?"}
-    K -->|Yes| L["Display Underflow"]
-    K -->|No| M["Delete Top Node and Update Top"]
-    L --> D
-    M --> D
+    H -->|Yes| J["Stack Underflow"]
+    H -->|No| K["Delete Top Node and Update Pointers"]
 
-    F -->|Display| N["Traverse from Top to NULL"]
-    N --> D
+    F -->|Enqueue| L["Create Node and Insert at Rear"]
+    F -->|Dequeue| M{"Queue Empty?"}
+    F -->|Display| N["Display Queue Elements"]
 
-    G -->|Enqueue| O["Create New Node"]
-    O --> P["Insert Node at Rear"]
-    P --> Q["Update Front and Rear Pointers"]
-    Q --> D
+    M -->|Yes| O["Queue Underflow"]
+    M -->|No| P["Delete Front Node and Update Pointers"]
 
-    G -->|Dequeue| R{"Queue Empty?"}
-    R -->|Yes| S["Display Underflow"]
-    R -->|No| T["Delete Front Node"]
-    T --> U["Update Front and Prev Pointer"]
-    U --> D
-    S --> D
-
-    G -->|Display| V["Traverse from Front to NULL"]
-    V --> D
+    G --> C
+    I --> C
+    J --> C
+    K --> C
+    L --> C
+    N --> C
+    O --> C
+    P --> C
+```
