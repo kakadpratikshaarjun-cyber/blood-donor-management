@@ -1,4 +1,4 @@
-The program successfully implements and compares Ordinary BST and Threaded BST.
+#The program successfully implements and compares Ordinary BST and Threaded BST.
 
 1. Both trees produce the same inorder traversal in sorted order.
 2. Ordinary BST uses an auxiliary stack for inorder traversal.
