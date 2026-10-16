@@ -1,12 +1,13 @@
-#The program successfully implements and compares Ordinary BST and Threaded BST.
+## Output / Outcome
+
+The program successfully implements and compares Ordinary BST and Threaded BST.
 
 1. Both trees produce the same inorder traversal in sorted order.
-2. Ordinary BST uses an auxiliary stack for inorder traversal.
-3. The program measures and displays the maximum stack usage of the Ordinary BST.
-4. Threaded BST performs inorder traversal without using an additional stack or recursion.
-5. The program displays the predecessor and successor threads of each node, wherever present.
-6. Both traversals have O(n) time complexity.
-7. Ordinary BST requires O(h) auxiliary space, whereas Threaded BST requires O(1) auxiliary space for traversal.
+2. Ordinary BST uses an auxiliary stack and displays its maximum stack usage.
+3. Threaded BST performs traversal without recursion or an additional stack.
+4. The program displays the predecessor and successor threads of each node, wherever present.
+5. Both traversals have O(n) time complexity.
+6. Ordinary BST requires O(h) auxiliary space, while Threaded BST requires O(1) auxiliary space for traversal.
 
-Result:
-Threaded BST provides a more space-efficient inorder traversal by using threads instead of an auxiliary stack. The program successfully demonstrates the difference in memory usage between Ordinary BST and Threaded BST.
+### Result
+The Threaded BST provides more space-efficient inorder traversal compared to the Ordinary BST by eliminating the need for an auxiliary stack.
