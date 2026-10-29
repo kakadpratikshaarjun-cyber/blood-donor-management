@@ -1,6 +1,9 @@
 Enter number of airports: 4
+
 Enter cost adjacency matrix:
+
 (Enter 0 if no direct route exists)
+
 0 10 20 0
 10 0 5 15
 20 5 0 15
