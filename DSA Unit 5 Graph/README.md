@@ -112,3 +112,117 @@ Minimum Cost: 8
 10. Conclusion
 
 The program successfully implements Dijkstra's algorithm to determine minimum flight costs and find the shortest route between selected airports using a weighted graph.
+
+
+
+
+Airport Route Optimization Using Dijkstra's Algorithm (Modified)
+
+1. Problem Statement
+
+Develop a C++ program to represent airports as vertices and flight connections as weighted edges, where weights indicate route costs. Implement Dijkstra's algorithm to calculate minimum travel costs from a selected source airport to all reachable airports and display the complete shortest path to a chosen destination. The program should allow users to change the source airport, update flight connection costs, and recalculate the shortest paths accordingly.
+
+2. Objectives
+
+1. To represent airports and flight connections using a weighted graph.
+2. To implement Dijkstra's shortest path algorithm in C++.
+3. To calculate minimum travel costs from a selected source airport.
+4. To display the complete shortest route to a chosen destination.
+5. To allow users to change the source airport dynamically.
+6. To update flight connection costs and recalculate shortest paths.
+7. To identify unreachable airports.
+
+3. Concept Used
+
+- Data Structure: Weighted Graph
+- Representation: Adjacency Matrix
+- Algorithm: Dijkstra's Algorithm
+- Technique: Greedy Approach
+- Programming Language: C++
+- Modification: Dynamic source selection and flight cost updates.
+
+4. Algorithm
+
+Step 1: Start the program.
+
+Step 2: Input the number of airports and flight connections.
+
+Step 3: Create a weighted adjacency matrix to store route costs.
+
+Step 4: Input the source airport and destination airport.
+
+Step 5: Initialize all distances to infinity, source distance to 0, and mark all airports as unvisited.
+
+Step 6: Select the unvisited airport having the minimum distance.
+
+Step 7: Update the distances of adjacent airports if a shorter route is found.
+
+Step 8: Store the parent vertex whenever a shorter route is identified.
+
+Step 9: Mark the selected airport as visited.
+
+Step 10: Repeat Steps 6–9 until all reachable airports are processed.
+
+Step 11: Display minimum travel costs from the source airport.
+
+Step 12: Reconstruct and display the shortest route to the selected destination.
+
+Step 13: Display the following menu:
+
+1. Change Source Airport
+2. Update Flight Connection Cost
+3. Recalculate Shortest Paths
+4. Exit
+
+Step 14: If the source airport is changed, accept the new source and run Dijkstra's algorithm again.
+
+Step 15: If a flight cost is updated, modify the adjacency matrix and recalculate the shortest paths.
+
+Step 16: Repeat the process until the user selects Exit.
+
+Step 17: Stop the program.
+
+5. Modifications Made
+
+The original program calculates the shortest path from a fixed source airport.
+
+The modified program introduces additional features:
+
+1. Allows users to change the source airport.
+2. Allows modification of existing flight connection costs.
+3. Recalculates shortest paths after changes.
+4. Provides a menu-driven interface.
+5. Displays updated minimum travel costs and routes.
+
+6. Time and Space Complexity
+
+- Time Complexity: O(V²) per Dijkstra execution.
+- Space Complexity: O(V²).
+- V represents the number of airports.
+
+7. Applications
+
+1. Airline route optimization.
+2. Transportation network planning.
+3. Flight cost comparison.
+4. GPS navigation systems.
+5. Shortest-path calculation in weighted networks.
+
+8. Advantages
+
+1. Calculates minimum travel costs efficiently.
+2. Allows flexible source airport selection.
+3. Supports flight cost modifications.
+4. Displays complete shortest routes.
+5. Provides updated results after network changes.
+
+9. Limitations
+
+1. Dijkstra's algorithm does not support negative edge weights.
+2. An adjacency matrix requires O(V²) memory.
+3. Route costs must be entered manually.
+4. The program does not consider real-time flight delays or availability.
+
+10. Conclusion
+
+The modified program successfully implements Dijkstra's algorithm for airport route optimization. It allows users to change the source airport, update flight costs, and recalculate the shortest paths, making the system more flexible and useful for route planning.
