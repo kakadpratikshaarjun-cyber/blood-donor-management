@@ -14,7 +14,7 @@ Enter Source Airport (0 to 2): 0
 
 ===== AIRPORT ROUTE OPTIMIZATION =====
 
-1. Calculate Minimum Travel Cost
+1. Calculate Minimum Travel Costs
 2. Display Shortest Route
 3. Change Source Airport
 4. Update Flight Cost
@@ -36,4 +36,32 @@ Enter Destination Airport: 2
 
 Shortest Route: 0 -> 1 -> 2
 
-Minimum Cost:
+Minimum Cost: 7
+
+Enter your choice: 3
+
+Enter New Source Airport: 1
+
+Minimum Travel Costs:
+
+1 to 0 = 4
+
+1 to 1 = 0
+
+1 to 2 = 3
+
+Enter your choice: 4
+
+Enter Two Airports: 1 2
+
+Enter New Flight Cost: 2
+
+Flight Cost Updated Successfully!
+
+Minimum Travel Costs:
+1 to 0 = 4
+1 to 1 = 0
+1 to 2 = 2
+
+Enter your choice: 5
+Program Ended Successfully!
